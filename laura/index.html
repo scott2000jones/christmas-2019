@@ -1,21 +1,15 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script>
-            $('.front').on('mouseover', function(){
-  $('.bauble').addClass('light');
-  $('.star').addClass('star-light');
-  Console.log("yes");
-})
-
-$('.front').on('mouseout', function(){
-  $('.bauble').removeClass('light');
-})
-        </script>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
     </head>
     <body>
-    <canvas id="canvas"></canvas>
+    <canvas id="canvas" style="pointer-events: none; z-index: 99;"></canvas>
 
 <div class="flip-container">
   <div class="flipper">
@@ -57,7 +51,10 @@ $('.front').on('mouseout', function(){
             <div class="line four"> </div> 
              </div>
         </div>
-      </div>
+        <br>
+        <br>
+        <h1>Merry Christmas</h1>
+    </div>
       <!-- <img class="image" src="http://3.bp.blogspot.com/_TZ60-72xZZk/TTmmQqYQeLI/AAAAAAAADzo/hbT4MAsLl1I/s1600/panda.jpg" width="400" height="600"> -->
     </div>
     <div class="back">
@@ -90,11 +87,15 @@ $('.front').on('mouseout', function(){
 </div>
 
 <div class="instruction-modal">
-  <div class="prompt-one"></div>
-  <div class="prompt-two"></div>
-  <div class="instruction"><strong>TAP ME!</strong></div>
+  <h2 class="instruction"><strong>↑ tap ↑</strong></h2>
 </div>
 <script>
+            $('.containerTree').on('mouseover', function(){
+            $('.bauble').addClass('light');
+            })
+            $('.front').on('mouseout', function(){
+            $('.bauble').removeClass('light');})
+
     $(document).ready(function() {
 
 var $front = $(".front");
