@@ -182,6 +182,7 @@ h1 {
     top: 230px;
     left: 150px;
     z-index: 100;
+    filter: drop-shadow(16px 16px 10px black);
   }
   
   .socks {
@@ -231,8 +232,6 @@ h1 {
   
   .tree {
     position: absolute;
-    filter: drop-shadow(16px 16px 10px black);
-
   }
   
   .base {
