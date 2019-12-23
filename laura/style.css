@@ -30,6 +30,7 @@ h1 {
   font-family: 'Mountains of Christmas';
   font-size: 70px;
   font-weight: lighter;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /* @keyframes move {
