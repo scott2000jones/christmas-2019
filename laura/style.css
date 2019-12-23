@@ -175,7 +175,8 @@ h1 {
     box-shadow: 0 0 1px rgba(76, 86, 103, 0.25), 0 2px 18px rgba(31, 37, 50, 0.32);
   }
 
-  /* tree */
+  /*////////////////////////////////////////////////////////////////////////////////////////////////// tree ///////////////*/
+
   .containerTree {
     position: absolute;
     top: 230px;
@@ -257,6 +258,7 @@ h1 {
       border-left: 50px solid transparent;
       border-right: 50px solid transparent;
       border-bottom: 100px solid #499F68;
+      filter: drop-shadow(16px 16px 10px black);
   }
   
   .layer.two{
