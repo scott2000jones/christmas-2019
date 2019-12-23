@@ -495,3 +495,81 @@ h1 {
   /* */
 
   
+  #snow{
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/807677/snow1.png'), 
+  url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/807677/snow2.png'), 
+  url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/807677/snow3.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:-1;
+    animation: snow 10s linear infinite;
+  }
+  
+  svg {
+    max-width: 85%;
+    max-height: 85%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  svg path {
+    fill-opacity: 0;
+    stroke: #29882F;
+    stroke-width: 20;
+    stroke-dasharray: 85;
+    stroke-dashoffset: 1000;
+    animation: draw 1s infinite linear;
+  }
+  
+  #star{
+     animation: star-morph 3s infinite linear;
+  }
+  
+  #red1, #red2, #red3, #red4, #red5, #red6 {
+     animation: color-morph 3s infinite linear;
+  }
+  
+  #yel1, #yel2, #yel3, #yel4, #yel5, #yel6, #yel7 {
+     animation: color-morph 3s infinite linear;
+    animation-delay: 1s;
+  }
+  
+  #blu1, #blu2, #blu3, #blu4, #blu5 {
+     animation: color-morph 3s infinite linear;
+    animation-delay: 2s;
+  }
+  
+  @keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+  
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes star-morph {
+    0% {opacity: .4}
+    33% {opacity: .6}
+    66% {opacity: 1}
+  }
+  
+  @keyframes color-morph {
+    0% {fill: #EFF119}
+    33% {fill: #C30E0E}
+    66% {fill: #168BAF}
+  }
+  
+  
+  
+  
