@@ -149,7 +149,7 @@ h1 {
     text-align: center;
     padding-top: 20%;
     font-family: "Quicksand";
-    font-size: .7em;
+    font-size: .6em;
     line-height: 150%;
     box-shadow: 0 0 1px rgba(76, 86, 103, 0.25), 0 2px 18px rgba(31, 37, 50, 0.32);
   }
@@ -176,7 +176,7 @@ h1 {
   }
 
   .poem {
-    margin: -20px 40px 2px;
+    margin: -35px 40px 2px;
   }
 
   /*////////////////////////////////////////////////////////////////////////////////////////////////// tree ///////////////*/
